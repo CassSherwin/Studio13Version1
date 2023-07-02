@@ -1,14 +1,140 @@
+.mainbody {margin: 0; height: 100%; overflow: hidden}
+
 
 body {
-    background-image: url("pinkhair.jpg");
-    background-color: #cccccc; /* Used if the image is unavailable */
+    background-image: url("5hair.jpg");
+    background-color: purple; /* Used if the image is unavailable */
     background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-    padding-top: 3%;
+     /* Resize the background image to cover the entire container */
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    text-size-adjust: auto;
+    height: 100%;
+    background-size: contain;
   }
+  /* start of star button CSS */
+.mainpageheader {
+    background-color: purple;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    height: 60px;
+    border-color: black;
+
+}
+
+.salondiv{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20%;
+}
+.container {
+    width: 100%;
+
+}
+#star-five {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: blue;
+    width: 0px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #3f75a2;
+    border-left: 50px solid transparent;
+    transform: rotate(35deg);
+  }
+  #star-five:before {
+    border-bottom: 40px solid #3f75a2;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -22.5px;
+    left: -32.5px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+  #star-five:after {
+    position: absolute;
+    display: block;
+    color: red;
+    top: 1px;
+    left: -52.5px;
+    width: 0px;
+    height: 0px;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #3f75a2;
+    border-left: 50px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
+  .backdrop {
+    z-index: 1; 
+    position: absolute; 
+    top: 450px; 
+    left: 75%;
+}
+.star-about-loc {
+        z-index: 1; 
+    position: absolute; 
+    top: 2px; 
+    left: 40%;
+}
+.star-about-loc-book {
+    left: 2px;
+}
+.curtain {
+    z-index: 2; 
+    position: absolute; 
+    top: 432px; 
+    left: 76%; 
+    background-position:100px 200px; 
+    padding: 20px;
+    padding-bottom:80px;
+    height:250px; 
+    width:500px;
+    line-height: 1em;
+    font-family: 'Berkshire Swash', cursive;
+    
+}
+.curtain-about {
+    z-index: 2; 
+    position: absolute; 
+    background-position:50px 100px; 
+    padding: 30px;
+    padding-bottom:75px;
+    padding-left:20px;
+    height:20px; 
+    width:50px;
+    line-height: 1em;
+    height: 0;
+    width: 0;
+    top: -20.5px;
+    left: -30.5px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+}
+.starcenter {
+    color: black;
+    font-size: 1em;
+    font-weight: bolder;
+    line-height: .025em;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: white;
+    font-family: 'Berkshire Swash', cursive;
+}
+/* end of star button CSS */
 
   .contactme {
-    background-image: url("pinkheadphones.jpg");
+    background-image: url("bowiequote.jpg");
     background-color: #cccccc; /* Used if the image is unavailable */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -34,12 +160,41 @@ body {
 .text {
     padding-top: 25%;
     text-align: center;
-    margin-right: 80%;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: lightblue;
+    -webkit-text-stroke-color: black;
     font-size: 75px;
     font-family: sans-serif;
 
+}
+.mainpagediv {
+    position: relative;
+    bottom: 20px;
+}
+.stardiv1 {
+    padding-left: 80%;
+    margin-top: 20%;
+ 
+   
+}
+.stardiv {
+   
+   
+  
+}
+
+.maintext {
+ 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: lightblue;
+    font-size: 5vw;
+    font-family: 'Berkshire Swash', cursive, 'Open Sans', sans-serif;
+    bottom: -20px;
+    position: absolute;
+    margin-left: 48%;
+  
+   
+    transform: translate(-50%, -50%)
+    
 }
 .nav-link {
     color: lightblue;
@@ -49,7 +204,7 @@ body {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     font-weight: bolder;
-    font-family: sans-serif;
+    font-family: 'Berkshire Swash', cursive;
 }
 .center {
     padding-left: 50%;
@@ -98,7 +253,7 @@ body {
     background-color: #cccccc; /* Used if the image is unavailable */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-    padding-top: 3%;
+    padding-top: 1%;
   }
 
 .aboutme {
@@ -109,18 +264,7 @@ body {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: aqua;
 }
-.mo {
-    font-size: 75px;
-    color: aqua;
-    width: 500px;
-    height: 600px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-right: 90%;
-}
+
 h5 {
     color: aqua;
     -webkit-text-stroke-width: .5px;
@@ -133,18 +277,20 @@ h5 {
     background: black;
     width: 25%;
     align-self: center;
+    margin-top: 20px;
 }
 .fun {
     color: aqua;
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: whitesmoke;
 }
-.serve {
-    background-image: url("rainbowhair.jpg");
-    background-color: #cccccc; /* Used if the image is unavailable */
+.revbody {
+    background-image: none;
+    background-color: purple; /* Used if the image is unavailable */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-    padding-top: 3%;
+    padding-top: 1%;
+    overflow-x: hidden;
   }
   .sl {
     font-size: 75px;
@@ -160,9 +306,9 @@ h5 {
     font-weight: bolder;
 }
 .list {
-    color: black;
+    color: lightblue;
     -webkit-text-stroke-width: 1x;
-    -webkit-text-stroke-color: cyan;
+    -webkit-text-stroke-color: hotpink;
     font-weight: bolder;
 }
 
@@ -171,10 +317,511 @@ h5 {
     -webkit-text-stroke-width: 1x;
     -webkit-text-stroke-color: magenta;
 }
-.servbook {
+.servbook, .reviewbook {
     color: cyan;
 }
 .galbod {
     background-color: purple;
     background-image: none;
+}
+.bookbuttondiv {
+    margin-left:80%;
+    margin-top: 40%;
+}
+.squarelink {
+    color: white;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: white;
+    background: black;
+    width: 25%;
+    align-self: center;
+}
+.servebook, .reviewbook {
+    margin-top: 20px;
+    margin-left: 38%;
+}
+.scrolldiv img{
+margin-top: 5%;
+border: 5px solid black;
+
+}
+.logoimg {
+    width: 70px;
+    height: 50px;
+    margin-left: -18%;
+    margin-top: 2px;
+}
+.logoimgcenter {
+    width: 150px;
+    height: 130px;
+    margin-left: 325%;
+    margin-top: 1px;
+}
+.am {
+    font-size: 17px;
+}
+.mainpageheader ul li {
+    font-size: 2em;
+
+}
+.mo  {
+    font-size: 60px;
+    color: aqua;
+    width: 600px;
+    height: 675px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
+    margin-left: 2px;
+    margin-top: 3%;
+    line-height: 2px;  
+}
+.aboutmaindiv {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.covidbody {
+    background-image: url("db.jpg");
+    background-color: #cccccc; /* Used if the image is unavailable */
+      /* Resize the background image to cover the entire container */
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+}
+.owner, .special {
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.coviddiv {
+    display: table;   /* Allow the centering to work */
+    margin: 0 auto;
+    padding-top: 5%;
+    background-size: cover;
+    width: 100%;
+   
+}
+.covidtext {
+    align-items: center;
+    width: 95%;
+    color: black;
+    display: inline;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;   
+}
+.covidtext li{
+        background-color: rgba(211,211,211,0.5);
+}
+.covidbody  {
+    background-color: rgba(211,211,211,0.5);
+}
+.covidheader {
+    position: relative;
+}
+
+.coviddropdown {
+    position: fixed;
+    top:0;
+    left:0;
+}
+.logoimg2 {
+    position: fixed;
+    top:0;
+    right:0;
+}
+.covidbutton {
+    color: pink;
+}
+.covidbutton:hover {
+    color: lightblue;
+}
+.covidbutton:visited {
+    color: lightpink;
+}
+.dropbox {
+    background-color: lightgray;
+}
+.droptext {
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: lightpink;
+font-family: sans-serif;
+color:black;
+}
+.droptextmain {
+ font-size: large;
+}
+.starwrapper {
+    background-color: white;
+}
+.aboutcon {
+    padding-top: 1px;
+    margin-top: 1px;
+}
+/*.servstardiv {
+    display: inline-block;
+    margin-left: 42%;
+}*/
+.starword {
+    color: lightblue;
+    -webkit-text-stroke-width: 1x;
+    -webkit-text-stroke-color: hotpink;
+    font-weight: bolder;
+}
+.servstardivforreviews {
+    margin-left: 10%;
+}
+    
+/* For size adjustments
+
+@media all and (max-width: 768px) {
+    html, body {min-height: 100%;}
+    .container, body, .contactme{
+        width:100%;
+        height: 100%;
+    }
+    .maintext, .servbook, .contact, .mo, 
+    {
+        left:25%;
+        top:25%;
+        position:absolute;
+        width:50%;
+        text-align:center;
+    }
+    .maintext, .servbook, .contact, .mo, {
+        text-align:center;
+         display: block;
+        margin: 0 auto;
+    }
+    .contact {
+        height: 40%;
+        width: 40%;
+    }
+    .contact, .mo {
+        margin-right: 10%;
+        padding-top: 5%;
+}
+.bookbuttondiv, .bookbutton,  {
+    margin-bottom: 2%;
+}
+*/
+/*
+.mainbody {
+    background-image: url("pinkhair.jpg");
+    background-color: #cccccc; /* Used if the image is unavailable */
+ /*   background-repeat: no-repeat; /* Do not repeat the image 
+    background-size: cover; /* Resize the background image to cover the entire container 
+    padding-top: 3%;
+    height: 100%;
+    }
+    .revbody {
+        position: relative;
+        max-width:100%;
+        min-width: 100%;
+    }
+.scrolldiv, .revbook {
+
+}
+
+
+}
+@media all and (max-width:640px){
+    html, body {min-height: 100%;}
+    .container, body, .contactme{
+        width:100%;
+        height: 100%;
+    }
+    .maintext, .servbook, .contact, .mo, 
+    {
+        width:50%;
+        height:auto;
+        display:inline-block;
+        text-align:center;
+        margin: 0 auto;
+    }
+    .maintext, .servbook, .contact, .mo, {
+        text-align:center;
+         display: block;
+         margin: 0 auto;
+    }
+    .contact {
+        height: 40%;
+        width: 40%;
+    }
+    .contact {
+        padding-top: 5%;
+        margin-right: 10%;
+}
+.mo {
+    height: 65%;
+    width: 65%;
+    padding-top: 10%;
+    padding-right: 10%;
+    background: none;
+}
+.bookbuttondiv, .bookbutton,   {
+    margin-bottom: 2%;
+}
+
+
+
+.mainbody {
+background-image: url("pinkhair.jpg");
+background-color: #cccccc; /* Used if the image is unavailable 
+background-repeat: no-repeat; /* Do not repeat the image 
+background-size: ; /* Resize the background image to cover the entire container 
+padding-top: 3%;
+}
+.revbody 
+    {min-height: 100%;}
+
+.scrolldiv, .revbook {
+
+}
+
+} 
+*/
+
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    body {
+    max-width: 100%;
+    height: auto;
+    font-size: x-small;
+    }
+    .maintext {
+         margin-bottom: 10%;
+    }
+    .mo {
+        max-width: 80%;
+        margin-left: 8%;
+    } 
+    .contact {
+        margin-left: 250px; 
+ }
+ .loc {
+     color: lightgray;
+     -webkit-text-stroke-width: .5px;
+     -webkit-text-stroke-color: lightgray;
+ }
+ .mainbody {
+
+    background-image: url("5hair.jpg");
+    background-color: purple; /* Used if the image is unavailable */
+    background-repeat: no-repeat; /* Do not repeat the image */
+     /* Resize the background image to cover the entire container */
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    text-size-adjust: auto;
+    height: 100%;
+    max-width: 100%;
+    height: auto;
+    font-size: x-small;
+    }
+ }
+
+ .revdiv {
+ 
+    
+}
+ .scrolldiv {
+    max-width: 98%;
+    width: auto;
+    overflow-x: visible;
+    padding-right: 500px; 
+    margin-right: -500px; 
+ }
+ .scrolldiv img {
+     margin-left: 1px;
+ }
+ .dropbox {
+     width: 200px;
+ }
+ .dropbox > a {
+    white-space: normal;
+ }
+ .stardiv {
+    width: 5%;
+    height: 5%;
+    margin-bottom: 98px;
+ }
+ .servstardivforreviews {
+    padding-left:0px;
+}
+
+}
+/*Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    body {
+        max-width: 100%;
+        height: auto;
+        
+        } 
+    .mainbody {
+    background-image: url("5hair.jpg");
+    background-color: purple; /* Used if the image is unavailable */
+    background-repeat: no-repeat; /* Do not repeat the image */
+     /* Resize the background image to cover the entire container */
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    text-size-adjust: auto;
+    height: 100%;
+    max-width: 100%;
+    height: auto;
+    font-size: x-small;
+    }
+    .maintext {
+        margin-bottom: 6%;
+            }   
+    .mo {
+        max-width: 80%;
+    } 
+    .mebook {
+        margin-bottom: 2%;
+    }
+    .contact {
+        margin-left: 250px; 
+ }
+ .loc {
+    color: lightgray;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: lightgray;
+}
+
+ .scrolldiv {
+    max-width: 98%;
+    width: auto;
+    overflow-x: hidden;
+ }
+ .scrolldiv img {
+    margin-left: 1px;
+    width: auto;
+}
+.dropbox {
+    width: 500px;
+}
+.dropbox > a {
+   white-space: normal;
+}
+.stardiv {
+    width: 5%;
+    height: 5%;
+    margin-bottom: 98px;
+ }
+ .servstardivforreviews {
+    padding-left:0px;
+}
+}
+
+/*Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    body {
+        max-width: 100%;
+        height: auto;
+        }
+    .mainbody {
+        background: url('pinkhair.jpg') no-repeat center fixed;     
+        background-size: cover;
+            }
+    .about {
+        background: url('carrie.jpg') no-repeat center fixed;     
+        background-size: cover;
+            }
+    .revbody {
+        background: url('rainbowhair.jpg') no-repeat center fixed;     
+        background-size: cover;
+                    }
+    .contactme {
+        background: url('pinkheadphones.jpg') no-repeat center fixed;     
+        background-size: cover;
+                    }
+    .loc {
+        color: lightgray;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: lightgray;
+                    }
+    .servstardiv {
+        display: block;
+        
+        
+                        
+                    }
+    .scrolldiv {
+        max-width: 98%;
+        width: auto;
+        overflow-x: visible;
+        padding-right: 400px; 
+        margin-right: -400px;  
+ }
+ .scrolldiv img {
+    width: auto;
+}
+.dropbox {
+    width: 500px;
+}
+.dropbox > a {
+   white-space: normal;
+}
+ }
+
+ @media (max-width: 767.98px) { 
+    body {
+        max-width: 100%;
+        height: auto;
+        
+        } 
+    .maintext {
+        margin-bottom: 6%;
+            }   
+    .mo {
+        max-width: 80%;
+    } 
+    .mebook {
+        margin-bottom: 2%;
+    }
+    .contact {
+        margin-left: 250px; 
+ }
+ .loc {
+    color: lightgray;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: lightgray;
+}
+
+ .scrolldiv {
+    max-width: 98%;
+    width: auto;
+    
+ }
+ .scrolldiv img {
+    margin-left: 1px;
+    width: auto;
+}
+.dropbox {
+    width: 500px;
+}
+.dropbox > a {
+   white-space: normal;
+}
+.stardiv {
+    width: 5%;
+    height: 5%;
+    margin-bottom: 98px;
+ }
+ .servstardivforreviews {
+    padding-left:0px;
+}
+    .revbody {
+    max-width: 100%;
+    overflow-x: hidden;
+    }
+    .revdiv {
+    max-width: 98%; 
+    }
+}
+
+*/
+@media (max-width: 1199.98px) { 
+
 }
